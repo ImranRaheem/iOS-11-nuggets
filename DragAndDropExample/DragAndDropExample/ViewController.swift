@@ -41,7 +41,27 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    private func updateCollection(with imageItems: [NSItemProviderReading], coordinator: UICollectionViewDropCoordinator) {
+        var i = 0
+        let destinationIndexPath = coordinator.destinationIndexPath ?? IndexPath(item: 0, section: 0)
+        for item in imageItems {
+            if let image = item as? UIImage {
+                // Local drag
+                if case .move = coordinator.proposal.operation {
+                    // replace images
+                    images.remove(at: self.draggedIndexPaths[i].row)
+                    images.insert(image, at: destinationIndexPath.row)
+                }
+                else if case .copy = coordinator.proposal.operation {
+                    // add images
+                    images.insert(image, at: destinationIndexPath.row)
+                    collectionView.insertItems(at: [destinationIndexPath])
+                }
+            }
+            i += 1
+        }
+    }
 }
 
 // MARK: Drag
@@ -69,28 +89,12 @@ extension ViewController: UICollectionViewDragDelegate {
 extension ViewController: UICollectionViewDropDelegate {
     
     func collectionView(_ collectionView: UICollectionView, performDropWith coordinator: UICollectionViewDropCoordinator) {
-        let destinationIndexPath = coordinator.destinationIndexPath ?? IndexPath(item: 0, section: 0)
         
         // loads objects on main thread
         coordinator.session.loadObjects(ofClass: UIImage.self) { imageItems in
             
-            var i = 0
-            for item in imageItems {
-                if let image = item as? UIImage {
-                    // Local drag
-                    if case .move = coordinator.proposal.operation {
-                        // replace images
-                        self.images.remove(at: self.draggedIndexPaths[i].row)
-                        self.images.insert(image, at: destinationIndexPath.row)
-                    }
-                    else if case .copy = coordinator.proposal.operation {
-                        // add images
-                        self.images.insert(image, at: destinationIndexPath.row)
-                        collectionView.insertItems(at: [destinationIndexPath])
-                    }
-                }
-                i += 1
-            }
+            self.updateCollection(with: imageItems, coordinator: coordinator)
+            
             collectionView.reloadItems(at: collectionView.indexPathsForVisibleItems)
             
 //            The following results in crash with reason: 'attempt to create view animation for nil view'
@@ -126,9 +130,7 @@ extension ViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kCellIdentifier, for: indexPath) as! ImageCell
-        
         cell.imageView.image = images[indexPath.row]
-        
         return cell
     }
     
