@@ -92,8 +92,9 @@ extension ViewController: UICollectionViewDropDelegate {
                 i += 1
             }
             collectionView.reloadItems(at: collectionView.indexPathsForVisibleItems)
-//             This results in crash with reason: 'attempt to create view animation for nil view'
-//             Reported here: http://www.openradar.me/28163205
+            
+//            The following results in crash with reason: 'attempt to create view animation for nil view'
+//            Reported here: http://www.openradar.me/28163205
 //
 //            let indexSet = IndexSet(integer: 0)
 //            collectionView.reloadSections(indexSet)
