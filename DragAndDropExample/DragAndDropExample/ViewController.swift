@@ -30,6 +30,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Drag Cars"
+        
         collectionView.register(ImageCell.self, forCellWithReuseIdentifier: kCellIdentifier)
         
         // Drag & Drop delegates
