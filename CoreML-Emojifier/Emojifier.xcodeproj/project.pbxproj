@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DA9EE311F0F65710071923C /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1DA9EE301F0F656F0071923C /* Inceptionv3.mlmodel */; };
+		1DA9EE351F0F65830071923C /* AVCaptureDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA9EE331F0F657F0071923C /* AVCaptureDevice+Extension.swift */; };
+		1DA9EE361F0F65850071923C /* CameraType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA9EE341F0F657F0071923C /* CameraType.swift */; };
+		1DA9EE371F0F65880071923C /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA9EE321F0F657F0071923C /* VideoCapture.swift */; };
 		1DE385131F0DF6A4002B7E75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE385121F0DF6A4002B7E75 /* AppDelegate.swift */; };
 		1DE385151F0DF6A4002B7E75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE385141F0DF6A4002B7E75 /* ViewController.swift */; };
 		1DE385181F0DF6A4002B7E75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE385161F0DF6A4002B7E75 /* Main.storyboard */; };
 		1DE3851A1F0DF6A4002B7E75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DE385191F0DF6A4002B7E75 /* Assets.xcassets */; };
 		1DE3851D1F0DF6A4002B7E75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE3851B1F0DF6A4002B7E75 /* LaunchScreen.storyboard */; };
-		1DE385251F0DF6B8002B7E75 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1DE385241F0DF6B8002B7E75 /* Inceptionv3.mlmodel */; };
-		1DE385291F0DF6C7002B7E75 /* CameraType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE385261F0DF6C7002B7E75 /* CameraType.swift */; };
-		1DE3852A1F0DF6C7002B7E75 /* AVCaptureDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE385271F0DF6C7002B7E75 /* AVCaptureDevice+Extension.swift */; };
-		1DE3852B1F0DF6C7002B7E75 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE385281F0DF6C7002B7E75 /* VideoCapture.swift */; };
 		1DE3852D1F0DFC0B002B7E75 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE3852C1F0DFC0B002B7E75 /* Emoji.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DA9EE301F0F656F0071923C /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		1DA9EE321F0F657F0071923C /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		1DA9EE331F0F657F0071923C /* AVCaptureDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVCaptureDevice+Extension.swift"; sourceTree = "<group>"; };
+		1DA9EE341F0F657F0071923C /* CameraType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraType.swift; sourceTree = "<group>"; };
 		1DE3850F1F0DF6A4002B7E75 /* Emojifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emojifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DE385121F0DF6A4002B7E75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DE385141F0DF6A4002B7E75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,10 +31,6 @@
 		1DE385191F0DF6A4002B7E75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DE3851C1F0DF6A4002B7E75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DE3851E1F0DF6A4002B7E75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1DE385241F0DF6B8002B7E75 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Inceptionv3.mlmodel; path = ../../../../Downloads/Inceptionv3.mlmodel; sourceTree = "<group>"; };
-		1DE385261F0DF6C7002B7E75 /* CameraType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraType.swift; path = ../../../BestChannelFinder/BestChannelFinder/CameraType.swift; sourceTree = "<group>"; };
-		1DE385271F0DF6C7002B7E75 /* AVCaptureDevice+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AVCaptureDevice+Extension.swift"; path = "../../../BestChannelFinder/BestChannelFinder/AVCaptureDevice+Extension.swift"; sourceTree = "<group>"; };
-		1DE385281F0DF6C7002B7E75 /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoCapture.swift; path = ../../../BestChannelFinder/BestChannelFinder/VideoCapture.swift; sourceTree = "<group>"; };
 		1DE3852C1F0DFC0B002B7E75 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,17 +64,17 @@
 		1DE385111F0DF6A4002B7E75 /* Emojifier */ = {
 			isa = PBXGroup;
 			children = (
+				1DA9EE331F0F657F0071923C /* AVCaptureDevice+Extension.swift */,
+				1DA9EE341F0F657F0071923C /* CameraType.swift */,
+				1DA9EE321F0F657F0071923C /* VideoCapture.swift */,
 				1DE385121F0DF6A4002B7E75 /* AppDelegate.swift */,
 				1DE385141F0DF6A4002B7E75 /* ViewController.swift */,
-				1DE385271F0DF6C7002B7E75 /* AVCaptureDevice+Extension.swift */,
-				1DE385261F0DF6C7002B7E75 /* CameraType.swift */,
-				1DE385281F0DF6C7002B7E75 /* VideoCapture.swift */,
 				1DE3852C1F0DFC0B002B7E75 /* Emoji.swift */,
 				1DE385161F0DF6A4002B7E75 /* Main.storyboard */,
 				1DE385191F0DF6A4002B7E75 /* Assets.xcassets */,
 				1DE3851B1F0DF6A4002B7E75 /* LaunchScreen.storyboard */,
 				1DE3851E1F0DF6A4002B7E75 /* Info.plist */,
-				1DE385241F0DF6B8002B7E75 /* Inceptionv3.mlmodel */,
+				1DA9EE301F0F656F0071923C /* Inceptionv3.mlmodel */,
 			);
 			path = Emojifier;
 			sourceTree = "<group>";
@@ -151,11 +151,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DE385151F0DF6A4002B7E75 /* ViewController.swift in Sources */,
-				1DE385251F0DF6B8002B7E75 /* Inceptionv3.mlmodel in Sources */,
-				1DE385291F0DF6C7002B7E75 /* CameraType.swift in Sources */,
-				1DE3852A1F0DF6C7002B7E75 /* AVCaptureDevice+Extension.swift in Sources */,
+				1DA9EE371F0F65880071923C /* VideoCapture.swift in Sources */,
+				1DA9EE311F0F65710071923C /* Inceptionv3.mlmodel in Sources */,
+				1DA9EE361F0F65850071923C /* CameraType.swift in Sources */,
 				1DE3852D1F0DFC0B002B7E75 /* Emoji.swift in Sources */,
-				1DE3852B1F0DF6C7002B7E75 /* VideoCapture.swift in Sources */,
+				1DA9EE351F0F65830071923C /* AVCaptureDevice+Extension.swift in Sources */,
 				1DE385131F0DF6A4002B7E75 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = J2YU4P959S;
+				DEVELOPMENT_TEAM = 2KW4Y469SX;
 				INFOPLIST_FILE = Emojifier/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.imran.Emojifier;
@@ -303,7 +303,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = J2YU4P959S;
+				DEVELOPMENT_TEAM = 2KW4Y469SX;
 				INFOPLIST_FILE = Emojifier/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.imran.Emojifier;
@@ -332,6 +332,7 @@
 				1DE385231F0DF6A4002B7E75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
